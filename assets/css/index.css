@@ -1,9 +1,6 @@
 /* Item section css start */
 .item-section {
-    padding: 30px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 25px 25px 0 0;
-    box-shadow: 0px 15px 50px 0px #00000014;
+    padding: 0 0 30px;
     min-height: calc(100vh - 110px);
 }
 
@@ -21,15 +18,25 @@
 
 
 .item-section-divider {
-    margin-bottom: 55px;
+    padding: 30px 30px;
+    border-radius: 25px 25px 0 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px -15px 20px 0px rgba(0, 0, 0, 0.08);
 }
 
 /* Item section css end */
+.cart-item-divider {
+    padding: 30px 30px;
+    border-radius: 25px 25px 0 0;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px -15px 20px 0px rgba(0, 0, 0, 0.08);
+}
 
-.cart-middle .item-section .title{
+.cart-middle .item-section .title {
     margin-bottom: 30px;
 }
- .cart-middle .item-section .title h1 {
+
+.cart-middle .item-section .title h1 {
     font-size: 25px;
     line-height: 29px;
     font-weight: 700;
@@ -37,28 +44,33 @@
     text-align: center;
 }
 
-.item-section .items-list{
+.item-section .items-list {
     margin-bottom: 30px;
 }
-.item-section .payment-details{
+
+.item-section .payment-details {
     border-top: 2px dashed #C3C3C3;
     padding-top: 30px;
 }
-.item-section .payment{
+
+.item-section .payment {
     margin-bottom: 41px;
     display: flex;
     justify-content: space-between;
 }
-.item-section .payment span{
+
+.item-section .payment span {
     font-size: 20px;
     line-height: 23px;
     font-weight: 700;
 }
-.item-section .payment-details .btn-wrapper{
+
+.item-section .payment-details .btn-wrapper {
     display: flex;
     justify-content: center;
 }
-.item-section .payment-details .btn-primary{
+
+.item-section .payment-details .btn-primary {
     font-size: 20px;
     line-height: 15px;
     font-weight: 700;
@@ -67,7 +79,7 @@
     box-shadow: 0px 4px 20px 0px #00000040;
 }
 
-@media (max-width: 340px){
+@media (max-width: 340px) {
     .item-section .payment span {
         font-size: 16px;
         line-height: 20px;

@@ -4,11 +4,14 @@
 }
 
 .header .header-content {
-    padding: 0 20px;
+    padding: 0 30px 0 19px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     min-height: 85px;
+}
+
+.header .header-content .logo {
+    margin: 0 auto;
 }
 
 .header .header-content .img-wrapper {
@@ -30,6 +33,7 @@
 .main-menu .logout-wrapper {
     position: fixed;
     bottom: 50px;
+    padding-left: 10px;
 }
 
 .main-menu .logout-wrapper .menu-link {
@@ -37,6 +41,8 @@
     line-height: 23px;
     font-weight: 400;
     color: #605D5D;
+    display: flex;
+    align-items: center;
     transition: .4s linear;
 }
 
@@ -47,6 +53,7 @@
 .main-menu .logout-wrapper .menu-link .img-wrapper {
     margin-right: 19px;
     width: 30px;
+    display: inline-block;
 }
 
 .main-menu .offcanvas-body {
@@ -60,13 +67,13 @@
 }
 
 .main-menu .menu-list .menu-item:not(:last-child) {
-    border-bottom: 0.25px solid #605D5D;
+    border-bottom: 0.25px solid rgba(93, 93, 93, .3);
 }
 
 .main-menu .menu-list .menu-link {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 0 15px 10px;
     font-size: 20px;
     line-height: 23px;
     font-weight: 400;
@@ -81,6 +88,9 @@
 .main-menu .menu-list .menu-link .img-wrapper {
     width: 30px;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .offcanvas-backdrop {
