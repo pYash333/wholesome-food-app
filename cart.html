@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" href="/path/to/icons/favicon.ico">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html" class="img-wrapper">
+                        <img src="assets/images/logo-main.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="btn-wrapper">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <img src="assets/images/menu-icon.svg" alt="Menu Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end main-menu" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-body">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <span class="img-wrapper">
+                                <img src="assets/images/all-items-icon.svg" alt="All Items">
+                            </span>
+                            All Items
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <span class="img-wrapper">
+                                <img src="assets/images/booking-icon.svg" alt="My Bookings">
+                            </span>
+                            My Bookings
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <span class="img-wrapper">
+                                <img src="assets/images/support.svg" alt="Support">
+                            </span>
+                            Support
+                        </a>
+                    </li>
+                </ul>
+                <div class="logout-wrapper">
+                    <a href="#" class="menu-link">
+                        <span class="img-wrapper">
+                            <img src="assets/images/logout.svg" alt="Logout">
+                        </span>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper cart-middle">
+        <!--Cart Item section start -->
+        <section class="item-section">
+            <div class="item-inner">
+                <div class="cart-item-divider">
+                    <div class="title">
+                        <h1>Cart</h1>
+                    </div>
+                    <div class="items-list">
+                        <div class="container-fluid px-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="cart-item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/dhokla-square-img.png" alt="Delicious Dhokla">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="card-title">Delicious Dhokla</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹150</div>
+                                                <div class="counter-wrapper">
+                                                    <button class="btn"><img src="assets/images/minus.svg"
+                                                            alt="minus"></button>
+                                                    <input type="text" class="form-control" placeholder="2">
+                                                    <button class="btn"><img src="assets/images/plus.svg"
+                                                            alt="plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="cart-item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/dhokla-square-img.png" alt="Delicious Dhokla">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="card-title">Delicious Dhokla</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹150</div>
+                                                <div class="counter-wrapper">
+                                                    <button class="btn"><img src="assets/images/minus.svg"
+                                                            alt="minus"></button>
+                                                    <input type="text" class="form-control" placeholder="2">
+                                                    <button class="btn"><img src="assets/images/plus.svg"
+                                                            alt="plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="cart-item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/dhokla-square-img.png" alt="Delicious Dhokla">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="card-title">Delicious Dhokla</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹150</div>
+                                                <div class="counter-wrapper">
+                                                    <button class="btn"><img src="assets/images/minus.svg"
+                                                            alt="minus"></button>
+                                                    <input type="text" class="form-control" placeholder="2">
+                                                    <button class="btn"><img src="assets/images/plus.svg"
+                                                            alt="plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-details">
+                        <div class="payment">
+                            <span>Payable Amount</span>
+                            <span>₹ 150</span>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn btn-primary">Pay Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cart Item section end -->
+    </div>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
