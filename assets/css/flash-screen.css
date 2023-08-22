@@ -1,0 +1,64 @@
+/* flash screen section css start */
+.flash-screen {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/flash-screen-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 0px 10px 0px #0000004D;
+}
+
+.flash-screen-content {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: #FFFBEF;
+    width: 100%;
+    padding: 95px 20px 65px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flash-screen-content .img-wrapper {
+    width: 147px;
+    margin-bottom: 41px;
+}
+
+.flash-screen-content .title {
+    margin-bottom: 56px;
+}
+
+.flash-screen-content .title h4 {
+    font-size: 15px;
+    line-height: 17px;
+    color: #2A2D37;
+}
+
+.flash-screen-content .btn-primary {
+    backdrop-filter: blur(15px);
+    border-radius: 40px;
+    padding: 13px 37px;
+    display: flex;
+    align-items: center;
+}
+
+.flash-screen-content .btn-primary span {
+    display: inline-block;
+    width: 24px;
+    margin-right: 15px;
+}
+
+/* flash screen section css end */
+
+@media(min-width: 991px) {
+    .flash-screen {
+        max-width: 425px;
+        margin: 0 auto;
+    }
+
+    .flash-screen-content {
+        max-width: 426px;
+    }
+}

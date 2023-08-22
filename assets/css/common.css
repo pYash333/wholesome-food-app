@@ -1,0 +1,149 @@
+/* Item-card css start */
+.item-card {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 15px 50px 0px #00000014;
+    height: 100%;
+}
+
+.item-card.sold-out {
+    opacity: .5;
+}
+
+.item-card .item-img-wrapper {
+    width: 100%;
+    height: 1px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 54%;
+    margin-bottom: 10px;
+}
+
+.item-card .item-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.item-card .item-content .title {
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 700;
+    color: #2A2D37;
+    margin-bottom: 3px;
+}
+
+.item-card .item-content .item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.item-card .item-content .item-details .pricing {
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: 900;
+    color: #FBC63D;
+}
+
+.item-card .item-content .item-details .pricing span {
+    font-size: 28px;
+    line-height: 25px;
+    font-weight: 900;
+}
+
+.item-card .item-content .item-details .btn {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2A2D37;
+    transition: .4s linear;
+}
+
+.item-card .item-content .item-details .btn:hover {
+    box-shadow: 0px 0px 8px 0px #00000040;
+}
+
+/* Badge */
+
+.badge-wrapper .badge {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 2px 6px;
+    background-color: #F85D2F;
+    border-radius: 3px;
+}
+
+/* Counter Input */
+.counter-wrapper {
+    padding: 7px 15px;
+    background-color: #2A2D370D;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.counter-wrapper .btn {
+    padding: 0;
+    min-width: 22px;
+    border: none;
+}
+
+.counter-wrapper .form-control {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #2A2D37;
+    max-width: 50px;
+    padding: 0;
+    box-shadow: none !important;
+}
+/* Item-card css end */
+
+/* Order fixed section css start */
+.order-fixed-section{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 35px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(10px);
+}
+.order-fixed-section .order-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-fixed-section .order-info .item-quantity{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #2A2D37;
+}
+.order-fixed-section .order-info .item-quantity .img-wrapper{
+    display: inline-block;
+    width: 24px;
+    margin-right: 10px;
+}
+.order-fixed-section .order-info .btn-primary{
+    padding: 13px 35px;
+    border-radius: 35px;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 700;
+}
+/* Order fixed section css end */

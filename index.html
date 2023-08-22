@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -12,10 +13,266 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="assets/css/custom.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Tomorrow’s Items</title>
 </head>
+
 <body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#" class="img-wrapper">
+                        <img src="assets/images/logo-main.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="btn-wrapper">
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <img src="assets/images/menu-icon.svg" alt="Menu Icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end main-menu" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-body">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <span class="img-wrapper">
+                                <img src="assets/images/all-items-icon.svg" alt="All Items">
+                            </span>
+                            All Items
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <span class="img-wrapper">
+                                <img src="assets/images/booking-icon.svg" alt="My Bookings">
+                            </span>
+                            My Bookings
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">
+                            <span class="img-wrapper">
+                                <img src="assets/images/support.svg" alt="Support">
+                            </span>
+                            Support
+                        </a>
+                    </li>
+                </ul>
+                <div class="logout-wrapper">
+                    <a href="#" class="menu-link">
+                        <span class="img-wrapper">
+                            <img src="assets/images/logout.svg" alt="Logout">
+                        </span>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <!-- Item section start -->
+        <section class="item-section">
+            <div class="item-inner">
+                <div class="item-section-divider">
+                    <div class="title">
+                        <h1>Tomorrow’s Items</h1>
+                    </div>
+                    <div class="items-list">
+                        <div class="container-fluid px-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/dhokla-img.png" alt="Delicious Dhokla">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Delicious Dhokla</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>30</span></div>
+                                                <div class="btn btn-primary">Add</div>
+                                            </div>
+                                        </div>
+                                        <div class="badge-wrapper">
+                                            <span class="badge">Only 3 left</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/parathas.png" alt="Parathas">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Parathas</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>100</span></div>
+                                                <div class="counter-wrapper">
+                                                    <button class="btn"><img src="assets/images/minus.svg"
+                                                            alt="minus"></button>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <button class="btn"><img src="assets/images/plus.svg"
+                                                            alt="plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/samosa.png" alt="Aloo Samosas">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Aloo Samosas</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>50</span></div>
+                                                <div class="counter-wrapper">
+                                                    <button class="btn"><img src="assets/images/minus.svg"
+                                                            alt="minus"></button>
+                                                    <input type="text" class="form-control" placeholder="1">
+                                                    <button class="btn"><img src="assets/images/plus.svg"
+                                                            alt="plus"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section-divider">
+                    <div class="title">
+                        <h1>Sold - Out Items</h1>
+                    </div>
+                    <div class="items-list">
+                        <div class="container-fluid px-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card sold-out">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/dhokla-img.png" alt="Delicious Dhokla">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Delicious Dhokla</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>30</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card sold-out">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/parathas.png" alt="Parathas">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Parathas</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card sold-out">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/samosa.png" alt="Aloo Samosas">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Aloo Samosas</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>50</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section-divider">
+                    <div class="title">
+                        <h1>Other Items</h1>
+                    </div>
+                    <div class="items-list">
+                        <div class="container-fluid px-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/dhokla-img.png" alt="Delicious Dhokla">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Delicious Dhokla</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>30</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/parathas.png" alt="Parathas">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Parathas</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>100</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="item-card">
+                                        <div class="item-img-wrapper">
+                                            <img src="assets/images/samosa.png" alt="Aloo Samosas">
+                                        </div>
+                                        <div class="item-content">
+                                            <h2 class="title">Aloo Samosas</h2>
+                                            <div class="item-details">
+                                                <div class="pricing">₹<span>50</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Item section end -->
+        <!-- Order fixed section start -->
+        <section class="order-fixed-section">
+            <div class="order-fixed-inner">
+                <div class="order-info">
+                    <div class="info-left">
+                        <div class="item-quantity">
+                            <span class="img-wrapper">
+                                <img src="assets/images/cart-icon.svg" alt="Cart Icon">
+                            </span>
+                            2 Items
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Order fixed section end -->
+    </div>
     <!-- Bootstrap js -->
-    <link rel="stylesheet" href="assets/js/bootstrap.min.js">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
