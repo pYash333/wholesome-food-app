@@ -15,13 +15,32 @@
 }
 
 .header .header-content .img-wrapper {
-    width: 264px;
+    width: 195px;
 }
 
 .header .header-content .btn-wrapper {
     width: 30px;
 }
-
+.header .amount-badge{
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #2A2D37;
+    padding: 6px 37px 6px 15px;
+    background-color: #FBC63D4D;
+    border: 1px solid #FBC63D80;
+    border-radius: 35px;
+    position: relative;
+}
+.header .amount-badge::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    width: 27px;
+    height: 42px;
+    background: url(../images/coins.png);
+}
 .main-menu {
     max-width: 280px;
     padding-top: 50px;
